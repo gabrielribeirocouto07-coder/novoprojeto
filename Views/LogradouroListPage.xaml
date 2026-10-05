@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuAppLogradouros.Views.LogradouroListPage"
+             Title="Lista de Logradouros">
+    <VerticalStackLayout Padding="20" Spacing="15">
+        
+        <!-- Barra de Pesquisa / Filtro -->
+        <SearchBar x:Name="SearchField" 
+                   Placeholder="Filtrar por logradouro..." 
+                   TextChanged="OnSearchTextChanged"/>
+
+        <!-- Botão para Novo Cadastro -->
+        <Button Text="+ Novo Logradouro" 
+                Clicked="OnAddClicked" 
+                BackgroundColor="#4CAF50" 
+                TextColor="White" 
+                FontAttributes="Bold"/>
+
+        <!-- Lista de Dados -->
+        <CollectionView x:Name="CollectionLogradouros" SelectionMode="Single" SelectionChanged="OnSelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,5" Padding="15" CornerRadius="8" BorderColor="#CCCCCC">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="{Binding Nome}" FontSize="16" FontAttributes="Bold"/>
+                            <Label Text="{Binding Bairro}" FontSize="14" TextColor="#666666"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

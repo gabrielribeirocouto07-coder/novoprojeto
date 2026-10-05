@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuAppLogradouros.Views.SettingsPage"
+             Title="Configurações do Sistema">
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="20">
+            
+            <!-- Seção: Credenciais do Banco de Dados -->
+            <Frame BackgroundColor="#F8F9FA" Padding="15" CornerRadius="10" BorderColor="#DEE2E6">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="🗄️ Credenciais do Banco de Dados" FontSize="16" FontAttributes="Bold" TextColor="#212529"/>
+                    
+                    <Label Text="Servidor / Host:" FontSize="13" TextColor="#495057"/>
+                    <Entry x:Name="TxtHost" Text="localhost:3306" />
+
+                    <Label Text="Nome do Banco (Database):" FontSize="13" TextColor="#495057"/>
+                    <Entry x:Name="TxtDatabase" Text="db_logradouros_gabriel" />
+
+                    <Label Text="Usuário:" FontSize="13" TextColor="#495057"/>
+                    <Entry x:Name="TxtUser" Text="admin_sistema" />
+
+                    <Label Text="Senha:" FontSize="13" TextColor="#495057"/>
+                    <Entry x:Name="TxtPass" IsPassword="True" Text="********" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Seção: Escolha do Tema -->
+            <Frame BackgroundColor="#F8F9FA" Padding="15" CornerRadius="10" BorderColor="#DEE2E6">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="🎨 Aparência e Tema" FontSize="16" FontAttributes="Bold" TextColor="#212529"/>
+                    
+                    <Label Text="Selecione o tema da aplicação:" FontSize="13" TextColor="#495057"/>
+                    <Picker x:Name="PickerTema" Title="Selecione o tema">
+                        <Picker.Items>
+                            <x:String>Tema Claro (Light)</x:String>
+                            <x:String>Tema Escuro (Dark)</x:String>
+                            <x:String>Padrão do Sistema</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Botão de Salvar Configurações com Ícone/Estilo -->
+            <Button Text="💾 Salvar Configurações" 
+                    Clicked="OnSaveSettingsClicked" 
+                    BackgroundColor="#0D6EFD" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    HeightRequest="50" 
+                    CornerRadius="8"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
