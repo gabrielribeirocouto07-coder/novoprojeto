@@ -6,20 +6,11 @@
        Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
-        <!-- Aba 1: Dashboard -->
-        <ShellContent Title="Dashboard"
-                      Icon="dotnet_bot.png"
-                      ContentTemplate="{DataTemplate views:DashboardPage}" />
-
-        <!-- Aba 2: Logradouros (CRUD) -->
-        <ShellContent Title="Logradouros"
-                      Icon="dotnet_bot.png"
-                      ContentTemplate="{DataTemplate views:LogradouroListPage}" />
-
-        <!-- Aba 3: Configurações (Novo Requisito) -->
-        <ShellContent Title="Configurações"
-                      Icon="dotnet_bot.png"
-                      ContentTemplate="{DataTemplate views:SettingsPage}" />
+        <ShellContent Title="Dashboard" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:DashboardPage}" />
+        <ShellContent Title="Logradouros" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:LogradouroListPage}" />
+        <ShellContent Title="Alunos" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:AlunoListPage}" />
+        <ShellContent Title="Colaboradores" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:ColaboradorListPage}" />
+        <ShellContent Title="Configurações" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:SettingsPage}" />
     </TabBar>
 
 </Shell>

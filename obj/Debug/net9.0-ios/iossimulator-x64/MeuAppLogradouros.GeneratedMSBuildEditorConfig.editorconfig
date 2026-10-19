@@ -51,6 +51,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MeuAppLogradouros.Resource
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[D:/novo projeto/MeuAppLogradouros/Views/AlunoDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuAppLogradouros.Views.AlunoDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AlunoDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AlunoDetailPage.xaml
+
+[D:/novo projeto/MeuAppLogradouros/Views/AlunoListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuAppLogradouros.Views.AlunoListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AlunoListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AlunoListPage.xaml
+
 [D:/novo projeto/MeuAppLogradouros/Views/DashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MeuAppLogradouros.Views.DashboardPage.xaml
