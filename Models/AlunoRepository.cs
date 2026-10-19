@@ -4,7 +4,7 @@ public static class AlunoRepository
 {
     public static List<Aluno> Lista { get; set; } = new List<Aluno>
     {
-        new Aluno { Id = 1, Nome = "Gabriel Ribeiro Couto", Matricula = "202601", Curso = "Desenvolvimento de Sistemas" }
+        new Aluno { Id = 1, Nome = "Gabriel Ribeiro Couto", CPF = "000.000.000-00", Matricula = "202601", Curso = "Desenvolvimento de Sistemas" }
     };
 
     public static void Add(Aluno item)

@@ -3,14 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MeuAppLogradouros.Views.AlunoDetailPage"
              Title="Detalhes do Aluno">
-    <VerticalStackLayout Padding="20" Spacing="15">
-        <Label Text="Nome Completo:" FontAttributes="Bold"/>
-        <Entry x:Name="TxtNome" Placeholder="Gabriel Ribeiro Couto" />
-        <Label Text="Matrícula:" FontAttributes="Bold"/>
-        <Entry x:Name="TxtMatricula" />
-        <Label Text="Curso:" FontAttributes="Bold"/>
-        <Entry x:Name="TxtCurso" />
-        <Button Text="Salvar" Clicked="OnSaveClicked" BackgroundColor="#2563EB" TextColor="White" FontAttributes="Bold"/>
-        <Button x:Name="BtnExcluir" Text="Excluir" Clicked="OnDeleteClicked" BackgroundColor="#DC2626" TextColor="White" FontAttributes="Bold"/>
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Image x:Name="ImgFoto" WidthRequest="120" HeightRequest="120" HorizontalOptions="Center" Aspect="AspectFill" BackgroundColor="#EEE"/>
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="📸 Tirar Foto" Clicked="OnTirarFotoClicked" BackgroundColor="#0D6EFD" TextColor="White"/>
+                <Button Text="🖼️ Galeria" Clicked="OnEscolherGaleriaClicked" BackgroundColor="#6C757D" TextColor="White"/>
+            </HorizontalStackLayout>
+            
+            <Label Text="Nome Completo:" FontAttributes="Bold"/>
+            <Entry x:Name="TxtNome" Placeholder="Digite o nome (ex: Zé dos Testes)" />
+            
+            <Label Text="CPF:" FontAttributes="Bold"/>
+            <Entry x:Name="TxtCpf" Placeholder="000.000.000-00" />
+            
+            <Label Text="Matrícula:" FontAttributes="Bold"/>
+            <Entry x:Name="TxtMatricula" />
+            
+            <Label Text="Curso:" FontAttributes="Bold"/>
+            <Entry x:Name="TxtCurso" />
+            
+            <Button Text="Salvar" Clicked="OnSaveClicked" BackgroundColor="#2563EB" TextColor="White" FontAttributes="Bold" HeightRequest="45"/>
+            <Button x:Name="BtnExcluir" Text="Excluir" Clicked="OnDeleteClicked" BackgroundColor="#DC2626" TextColor="White" FontAttributes="Bold" HeightRequest="45"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

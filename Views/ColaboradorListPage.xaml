@@ -4,22 +4,20 @@
              x:Class="MeuAppLogradouros.Views.ColaboradorListPage"
              Title="Gerenciamento de Colaboradores">
     <VerticalStackLayout Padding="20" Spacing="15">
-        <Button Text="+ Novo Colaborador" 
-                Clicked="OnAddClicked" 
-                BackgroundColor="#10B981" 
-                TextColor="White" 
-                FontAttributes="Bold"/>
-        
-        <CollectionView x:Name="CollectionColaboradores" 
-                        SelectionMode="Single" 
-                        SelectionChanged="OnSelectionChanged">
+        <SearchBar Placeholder="Filtrar por CPF ou Nome..." TextChanged="OnSearchTextChanged"/>
+        <Button Text="+ Novo Colaborador" Clicked="OnAddClicked" BackgroundColor="#10B981" TextColor="White" FontAttributes="Bold"/>
+        <CollectionView x:Name="CollectionColaboradores" SelectionMode="Single" SelectionChanged="OnSelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame Margin="0,5" Padding="15" CornerRadius="8">
-                        <VerticalStackLayout Spacing="3">
-                            <Label Text="{Binding Nome}" FontSize="16" FontAttributes="Bold"/>
-                            <Label Text="{Binding Cargo}" FontSize="14" TextColor="#666"/>
-                        </VerticalStackLayout>
+                        <HorizontalStackLayout Spacing="15">
+                            <Image Source="{Binding FotoPath}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill"/>
+                            <VerticalStackLayout Spacing="3" VerticalOptions="Center">
+                                <Label Text="{Binding Nome}" FontSize="16" FontAttributes="Bold"/>
+                                <Label Text="{Binding CPF, StringFormat='CPF: {0}'}" FontSize="13" TextColor="#666"/>
+                                <Label Text="{Binding Cargo}" FontSize="14" TextColor="#444"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

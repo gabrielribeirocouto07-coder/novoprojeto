@@ -4,7 +4,7 @@ public static class ColaboradorRepository
 {
     public static List<Colaborador> Lista { get; set; } = new List<Colaborador>
     {
-        new Colaborador { Id = 1, Nome = "Gabriel Ribeiro Couto", Cargo = "Tech Lead", Departamento = "TI" }
+        new Colaborador { Id = 1, Nome = "Gabriel Ribeiro Couto", CPF = "111.111.111-11", Cargo = "Tech Lead", Departamento = "TI" }
     };
 
     public static void Add(Colaborador item)

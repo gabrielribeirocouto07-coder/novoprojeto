@@ -9,8 +9,21 @@ public partial class AlunoListPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        CollectionAlunos.ItemsSource = AlunoRepository.Lista.ToList();
+        CarregarLista();
     }
+
+    private void CarregarLista(string filtro = "")
+    {
+        var dados = AlunoRepository.Lista.AsEnumerable();
+        if (!string.IsNullOrWhiteSpace(filtro))
+        {
+            dados = dados.Where(x => x.CPF.Contains(filtro, StringComparison.OrdinalIgnoreCase) ||
+                                     x.Nome.Contains(filtro, StringComparison.OrdinalIgnoreCase));
+        }
+        CollectionAlunos.ItemsSource = dados.ToList();
+    }
+
+    private void OnSearchTextChanged(object sender, TextChangedEventArgs e) => CarregarLista(e.NewTextValue);
 
     private async void OnAddClicked(object sender, EventArgs e) => await Navigation.PushAsync(new AlunoDetailPage());
 
