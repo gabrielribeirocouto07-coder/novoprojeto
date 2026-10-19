@@ -63,6 +63,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MeuAppLogradouros.Views.Al
 build_metadata.AdditionalFiles.TargetPath = Views\AlunoListPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AlunoListPage.xaml
 
+[D:/novo projeto/MeuAppLogradouros/Views/ColaboradorDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuAppLogradouros.Views.ColaboradorDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ColaboradorDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ColaboradorDetailPage.xaml
+
+[D:/novo projeto/MeuAppLogradouros/Views/ColaboradorListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MeuAppLogradouros.Views.ColaboradorListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ColaboradorListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ColaboradorListPage.xaml
+
 [D:/novo projeto/MeuAppLogradouros/Views/DashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MeuAppLogradouros.Views.DashboardPage.xaml

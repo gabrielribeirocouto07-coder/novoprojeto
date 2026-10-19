@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuAppLogradouros.Views.ColaboradorDetailPage"
+             Title="Detalhes do Colaborador">
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Nome Completo:" FontAttributes="Bold"/>
+        <Entry x:Name="TxtNome" Placeholder="Gabriel Ribeiro Couto" />
+        
+        <Label Text="Cargo:" FontAttributes="Bold"/>
+        <Entry x:Name="TxtCargo" Placeholder="Desenvolvedor" />
+        
+        <Label Text="Departamento:" FontAttributes="Bold"/>
+        <Entry x:Name="TxtDepartamento" Placeholder="TI" />
+        
+        <Button Text="Salvar" 
+                Clicked="OnSaveClicked" 
+                BackgroundColor="#2563EB" 
+                TextColor="White" 
+                FontAttributes="Bold"/>
+        
+        <Button x:Name="BtnExcluir" 
+                Text="Excluir" 
+                Clicked="OnDeleteClicked" 
+                BackgroundColor="#DC2626" 
+                TextColor="White" 
+                FontAttributes="Bold"/>
+    </VerticalStackLayout>
+</ContentPage>
