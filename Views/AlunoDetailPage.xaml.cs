@@ -12,6 +12,7 @@ public partial class AlunoDetailPage : ContentPage
         InitializeComponent();
         _aluno = new Aluno();
         _isEdicao = false;
+        DateVencimento.Date = DateTime.Now.AddDays(30);
         BtnExcluir.IsVisible = false;
     }
 
@@ -24,6 +25,8 @@ public partial class AlunoDetailPage : ContentPage
         TxtCpf.Text = _aluno.CPF;
         TxtMatricula.Text = _aluno.Matricula;
         TxtCurso.Text = _aluno.Curso;
+        SwitchAtiva.IsToggled = _aluno.MatriculaAtiva;
+        DateVencimento.Date = _aluno.DataVencimentoPlano;
 
         if (!string.IsNullOrEmpty(_aluno.FotoPath))
             ImgFoto.Source = _aluno.FotoPath;
@@ -68,6 +71,8 @@ public partial class AlunoDetailPage : ContentPage
         _aluno.CPF = TxtCpf.Text;
         _aluno.Matricula = TxtMatricula.Text;
         _aluno.Curso = TxtCurso.Text;
+        _aluno.MatriculaAtiva = SwitchAtiva.IsToggled;
+        _aluno.DataVencimentoPlano = DateVencimento.Date;
 
         if (!_isEdicao) AlunoRepository.Add(_aluno);
         await Navigation.PopAsync();

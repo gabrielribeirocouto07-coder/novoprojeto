@@ -1,0 +1,8 @@
+<svg width="400" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="140" rx="20" fill="#1E293B" stroke="#10B981" stroke-width="4" />
+  <circle cx="65" cy="70" r="35" fill="#10B981" opacity="0.2" />
+  <path d="M50 70 L65 50 L80 70 L65 90 Z" fill="#10B981" />
+  <text x="115" y="60" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">MeuAppAcademia</text>
+  <text x="115" y="88" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#10B981">Gabriel Ribeiro Couto</text>
+  <text x="115" y="110" font-family="Arial, sans-serif" font-size="11" fill="#94A3B8">Enterprise Edition • .NET MAUI</text>
+</svg>

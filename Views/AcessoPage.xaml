@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuAppLogradouros.Views.AcessoPage"
+             Title="Controle de Entrada e Saída">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="🏋️ Controle de Acesso - Academia" FontSize="20" FontAttributes="Bold"/>
+
+            <Label Text="Selecione o Tipo:" FontAttributes="Bold"/>
+            <Picker x:Name="PickerTipo" SelectedIndexChanged="OnTipoChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Aluno</x:String>
+                        <x:String>Colaborador</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Selecione a Pessoa:" FontAttributes="Bold"/>
+            <Picker x:Name="PickerPessoa" ItemDisplayBinding="{Binding Nome}"/>
+
+            <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                <Button Text="🟢 Registrar ENTRADA" Clicked="OnEntradaClicked" BackgroundColor="#10B981" TextColor="White" FontAttributes="Bold"/>
+                <Button Text="🔴 Registrar SAÍDA" Clicked="OnSaidaClicked" BackgroundColor="#DC2626" TextColor="White" FontAttributes="Bold"/>
+            </HorizontalStackLayout>
+
+            <Label Text="Histórico de Movimentação (Hoje):" FontSize="16" FontAttributes="Bold" Margin="0,15,0,0"/>
+            <CollectionView x:Name="CollectionAcessos">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="0,5" Padding="12" CornerRadius="8">
+                            <VerticalStackLayout Spacing="4">
+                                <Label Text="{Binding NomePessoa}" FontAttributes="Bold" FontSize="15"/>
+                                <Label Text="{Binding TipoPessoa, StringFormat='Perfil: {0}'}" FontSize="12" TextColor="#666"/>
+                                <Label Text="{Binding StatusTexto}" FontSize="13"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

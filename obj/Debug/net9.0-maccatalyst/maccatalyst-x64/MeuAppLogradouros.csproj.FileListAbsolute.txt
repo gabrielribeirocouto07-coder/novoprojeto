@@ -295,3 +295,6 @@ D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\X
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\MeuAppLo.2BAA5067.Up2Date
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\MeuAppLogradouros.genruntimeconfig.cache
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\MeuAppLogradouros.dll
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\logo_gabriel@3x.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\logo_gabriel@2x.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\logo_gabriel.png

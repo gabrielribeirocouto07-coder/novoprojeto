@@ -8,4 +8,8 @@ public class Aluno
     public string Matricula { get; set; } = string.Empty;
     public string Curso { get; set; } = string.Empty;
     public string FotoPath { get; set; } = string.Empty;
+    
+    // Novos campos para validação de academia
+    public bool MatriculaAtiva { get; set; } = true;
+    public DateTime DataVencimentoPlano { get; set; } = DateTime.Now.AddDays(30);
 }

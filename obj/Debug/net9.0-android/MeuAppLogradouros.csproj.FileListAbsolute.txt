@@ -1361,3 +1361,8 @@ D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\stamp\_ConvertResourc
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\stamp\_GenerateJavaStubs.stamp
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\resizetizer\r\drawable-xxxhdpi\logo_gabriel.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\resizetizer\r\drawable-xxhdpi\logo_gabriel.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\resizetizer\r\drawable-xhdpi\logo_gabriel.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\resizetizer\r\drawable-hdpi\logo_gabriel.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-android\resizetizer\r\drawable-mdpi\logo_gabriel.png

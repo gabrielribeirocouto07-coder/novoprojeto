@@ -514,3 +514,13 @@ D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+D:\novo projeto\MeuAppLogradouros\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\logo_gabriel.scale-400.png
+D:\novo projeto\MeuAppLogradouros\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\logo_gabriel.scale-200.png
+D:\novo projeto\MeuAppLogradouros\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\logo_gabriel.scale-150.png
+D:\novo projeto\MeuAppLogradouros\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\logo_gabriel.scale-125.png
+D:\novo projeto\MeuAppLogradouros\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\logo_gabriel.scale-100.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_gabriel.scale-400.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_gabriel.scale-200.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_gabriel.scale-150.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_gabriel.scale-125.png
+D:\novo projeto\MeuAppLogradouros\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_gabriel.scale-100.png

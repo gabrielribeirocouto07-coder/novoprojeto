@@ -3,14 +3,26 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:views="clr-namespace:MeuAppLogradouros.Views"
        x:Class="MeuAppLogradouros.AppShell"
-       Shell.FlyoutBehavior="Disabled">
+       FlyoutBehavior="Flyout">
 
-    <TabBar>
-        <ShellContent Title="Dashboard" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:DashboardPage}" />
-        <ShellContent Title="Logradouros" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:LogradouroListPage}" />
-        <ShellContent Title="Alunos" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:AlunoListPage}" />
-        <ShellContent Title="Colaboradores" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:ColaboradorListPage}" />
-        <ShellContent Title="Configurações" Icon="dotnet_bot.png" ContentTemplate="{DataTemplate views:SettingsPage}" />
-    </TabBar>
+    <FlyoutItem Title="Dashboard" Icon="dotnet_bot.png">
+        <ShellContent ContentTemplate="{DataTemplate views:DashboardPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Logradouros" Icon="dotnet_bot.png">
+        <ShellContent ContentTemplate="{DataTemplate views:LogradouroListPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Alunos" Icon="dotnet_bot.png">
+        <ShellContent ContentTemplate="{DataTemplate views:AlunoListPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Colaboradores" Icon="dotnet_bot.png">
+        <ShellContent ContentTemplate="{DataTemplate views:ColaboradorListPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Configurações" Icon="dotnet_bot.png">
+        <ShellContent ContentTemplate="{DataTemplate views:SettingsPage}" />
+    </FlyoutItem>
 
 </Shell>

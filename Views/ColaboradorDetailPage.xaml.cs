@@ -12,6 +12,7 @@ public partial class ColaboradorDetailPage : ContentPage
         InitializeComponent();
         _colaborador = new Colaborador();
         _isEdicao = false;
+        PickerContrato.SelectedIndex = 0; // Padrão: CLT
         BtnExcluir.IsVisible = false;
     }
 
@@ -24,6 +25,7 @@ public partial class ColaboradorDetailPage : ContentPage
         TxtCpf.Text = _colaborador.CPF;
         TxtCargo.Text = _colaborador.Cargo;
         TxtDepartamento.Text = _colaborador.Departamento;
+        PickerContrato.SelectedItem = _colaborador.TipoContrato;
 
         if (!string.IsNullOrEmpty(_colaborador.FotoPath))
             ImgFoto.Source = _colaborador.FotoPath;
@@ -68,6 +70,7 @@ public partial class ColaboradorDetailPage : ContentPage
         _colaborador.CPF = TxtCpf.Text;
         _colaborador.Cargo = TxtCargo.Text;
         _colaborador.Departamento = TxtDepartamento.Text;
+        _colaborador.TipoContrato = PickerContrato.SelectedItem?.ToString() ?? "CLT";
 
         if (!_isEdicao) ColaboradorRepository.Add(_colaborador);
         await Navigation.PopAsync();
